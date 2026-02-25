@@ -1,15 +1,26 @@
 {
-  "name": "projeto-busca",
+  "name": "meu-projeto-qa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de automação de testes com Cypress",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "report:clean": "rm -rf cypress/reports/*",
+    "report:generate": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json && npx marg cypress/reports/report.json -f report -o cypress/reports/"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "cypress"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.0"
+    "cypress": "^13.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
