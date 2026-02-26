@@ -18,4 +18,4 @@ Atualmente, o projeto cobre os seguintes cenários:
 
 1. **Clone este repositório:**
    ```bash
-   git clone [https://github.com/Alexsan2/rojeto-busca.git](https://github.com/Alexsan2/rojeto-busca.git)
+   git clone [https://github.com/Alexsan2/rojeto-busca.git](https://github.com/Alexsan2/rojeto-busca.git)# Status do Projeto: Integrado ao Jira com sucesso! ✅
